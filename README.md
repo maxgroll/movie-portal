@@ -15,7 +15,7 @@
 3.- create database
 
  
-From cmd (or terminal in Mac) change directory to "movie_portal-main/data" 
+From cmd (or terminal in Mac) change directory to "movie_portal-main/data" <br>
 a) in macintosh './create_database.bat' 
 b) Windows 'create_database.bat'
 c) this will create an sql database called "fallstudie_gruppe1"
