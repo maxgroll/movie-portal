@@ -1,0 +1,100 @@
+Last login: Wed Sep 21 13:40:24 on ttys000
+
+#####  Datenbank erstellen  ########
+
+Maxs-MacBook-Pro-2:~ maxvongroll$ cd /Users/maxvongroll/Sites/PHPProjects/fa21/phpd/fallstudie_gruppe1/data
+Maxs-MacBook-Pro-2:data maxvongroll$ bash create_database.sh
+Enter password: 
+Enter password: 
+Enter password: 
+Enter password: 
+Maxs-MacBook-Pro-2:data maxvongroll$ mariadb
+Welcome to the MariaDB monitor.  Commands end with ; or \g.
+Your MariaDB connection id is 1177
+Server version: 10.8.3-MariaDB Homebrew
+
+Copyright (c) 2000, 2018, Oracle, MariaDB Corporation Ab and others.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+
+#####  Tabellen einsehen  ########
+
+MariaDB [(none)]> use fallstudie_gruppe1
+Reading table information for completion of table and column names
+You can turn off this feature to get a quicker startup with -A
+
+Database changed
+MariaDB [fallstudie_gruppe1]> show tables
+    -> ;
++------------------------------+
+| Tables_in_fallstudie_gruppe1 |
++------------------------------+
+| actors                       |
+| admins                       |
+| comments                     |
+| countries                    |
+| directors                    |
+| films                        |
+| films_actors                 |
+| films_comments               |
+| films_genres                 |
+| films_languages              |
+| genres                       |
+| languages                    |
+| users                        |
++------------------------------+
+13 rows in set (0.001 sec)
+
+
+#####  Tabellenstruktur prüfen  ########
+
+
+MariaDB [fallstudie_gruppe1]> SELECT TABLE_NAME, COLUMN_NAME, DATA_TYPE, COLUMN_TYPE, COLUMN_COMMENT, ORDINAL_POSITION FROM information_schema.columns WHERE table_schema = 'fallstudie_gruppe1' ORDER BY TABLE_NAME, ORDINAL_POSITION;
++-----------------+--------------+-----------+---------------+----------------+------------------+
+| TABLE_NAME      | COLUMN_NAME  | DATA_TYPE | COLUMN_TYPE   | COLUMN_COMMENT | ORDINAL_POSITION |
++-----------------+--------------+-----------+---------------+----------------+------------------+
+| actors          | id           | int       | int(11)       |                |                1 |
+| actors          | actor        | varchar   | varchar(64)   |                |                2 |
+| admins          | id           | int       | int(11)       |                |                1 |
+| admins          | username     | varchar   | varchar(64)   |                |                2 |
+| admins          | password     | varchar   | varchar(255)  |                |                3 |
+| admins          | firstname    | varchar   | varchar(64)   |                |                4 |
+| admins          | lastname     | varchar   | varchar(64)   |                |                5 |
+| comments        | id           | int       | int(11)       |                |                1 |
+| comments        | comment      | text      | text          |                |                2 |
+| comments        | users_id     | int       | int(11)       |                |                3 |
+| comments        | created      | timestamp | timestamp     |                |                4 |
+| countries       | id           | int       | int(11)       |                |                1 |
+| countries       | country      | varchar   | varchar(50)   |                |                2 |
+| directors       | id           | int       | int(11)       |                |                1 |
+| directors       | director     | varchar   | varchar(50)   |                |                2 |
+| films           | id           | int       | int(11)       |                |                1 |
+| films           | title        | varchar   | varchar(512)  |                |                2 |
+| films           | release_year | year      | year(4)       |                |                3 |
+| films           | plot         | varchar   | varchar(1024) |                |                4 |
+| films           | runtime      | varchar   | varchar(12)   |                |                5 |
+| films           | directors_id | int       | int(11)       |                |                6 |
+| films           | poster       | varchar   | varchar(150)  |                |                7 |
+| films           | countries_id | int       | int(11)       |                |                8 |
+| films           | imdbID       | varchar   | varchar(17)   |                |                9 |
+| films_actors    | films_id     | int       | int(11)       |                |                1 |
+| films_actors    | actors_id    | int       | int(11)       |                |                2 |
+| films_comments  | films_id     | int       | int(11)       |                |                1 |
+| films_comments  | comments_id  | int       | int(11)       |                |                2 |
+| films_genres    | films_id     | int       | int(11)       |                |                1 |
+| films_genres    | genres_id    | int       | int(11)       |                |                2 |
+| films_languages | films_id     | int       | int(11)       |                |                1 |
+| films_languages | languages_id | int       | int(11)       |                |                2 |
+| genres          | id           | int       | int(11)       |                |                1 |
+| genres          | genre        | varchar   | varchar(128)  |                |                2 |
+| languages       | id           | int       | int(11)       |                |                1 |
+| languages       | language     | varchar   | varchar(50)   |                |                2 |
+| users           | id           | int       | int(11)       |                |                1 |
+| users           | username     | varchar   | varchar(64)   |                |                2 |
+| users           | password     | varchar   | varchar(255)  |                |                3 |
+| users           | email        | varchar   | varchar(128)  |                |                4 |
++-----------------+--------------+-----------+---------------+----------------+------------------+
+40 rows in set (0.007 sec)
+
+MariaDB [fallstudie_gruppe1]> 

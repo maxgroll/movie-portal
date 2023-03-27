@@ -1,0 +1,19 @@
+1.-änderung in include/database.php:
+
+a) $dbname = 'fallstudie_gruppe1';
+
+b) 
+// dem PDO werden vier Parameter übergeben, die Serverdaten aus der Variabel $dsn, die Logindaten für den Server und die $options -> angepasst
+$db = new PDO($dsn, $user, $password, $options); -> $options in parameter reingenommen
+
+
+#$db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION); ->rausgenommen, da dieser schon in dem %options array drin ist der als parameter übergeben wird.
+____________________________________________________________________________________________________________________________________________
+
+2.- in documentation/umls:
+
+'fallstudie_gruppe1_schema.pdf' hinzugefügt. Das ist eine Übersicht der tabellen und relationen (aus phpmyadmin).
+
+
+
+

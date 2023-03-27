@@ -1,0 +1,13 @@
+1.-include/database:  name der database geändert auf 'fallstudie_gruppe1' enauso wie die erstellte db.
+
+2.-einen ordner documentation/terminal und einen ordner documentation/umls hinzugefügt hier beinden sich:
+
+a) in terminal die terminal datei von heute
+b)in umls die diagramme der datenbank, und die klassendiagramme in edx und als bild
+
+
+3.-im ordner data befinden sich nun:
+ 
+a)das script zur erstellung der datenbank: 'fallstudie_gruppe1.sql'
+b)das migrationskript um foreign keys hinzuzufügen: '001_add_foreign_keys.sql'
+c)eine .bat datei (für windows) und eine .sh datei (für mac) womit die bis jetzt zwei sql dateien für erstellung der datenbank aufgerufen werden: die Erklärung wie die .bat oder .sh datei angewendet wird habe ich in dem 'Readme.txt'  im hauptordner reingeschrieben.

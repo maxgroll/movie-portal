@@ -1,0 +1,5 @@
+Testdaten für Tabelle admins
+------------------------------------------
+id(auto);username(varchar),password(varchar),firstname(varchar),lastname(varchar)
+
+,"admin","$2y$10$vd2OxmXHu7xqLncO1upTy.ICDuUtcLfwrhFIKGW0bC9d/jj/xHaAm","max","mustermann"

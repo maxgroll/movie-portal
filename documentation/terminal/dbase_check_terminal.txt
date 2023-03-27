@@ -1,0 +1,69 @@
+Maxs-MacBook-Pro-2:max maxvongroll$ mysql -uroot -ptrufa  < fallstudie_gruppe1.sql
+Maxs-MacBook-Pro-2:max maxvongroll$ mysql -uroot -ptrufa  < 001_add_foreign_keys.sql
+Maxs-MacBook-Pro-2:max maxvongroll$ mariadb
+Welcome to the MariaDB monitor.  Commands end with ; or \g.
+Your MariaDB connection id is 25
+Server version: 10.8.3-MariaDB Homebrew
+
+Copyright (c) 2000, 2018, Oracle, MariaDB Corporation Ab and others.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+MariaDB [(none)]> USE fallstudie_gruppe1
+Reading table information for completion of table and column names
+You can turn off this feature to get a quicker startup with -A
+
+Database changed
+MariaDB [fallstudie_gruppe1]> show tables
+    -> ;
++------------------------------+
+| Tables_in_fallstudie_gruppe1 |
++------------------------------+
+| actors                       |
+| admins                       |
+| comments                     |
+| countries                    |
+| directors                    |
+| films                        |
+| films_actors                 |
+| films_comments               |
+| films_genres                 |
+| films_languages              |
+| genres                       |
+| languages                    |
+| users                        |
++------------------------------+
+13 rows in set (0.001 sec)
+
+MariaDB [fallstudie_gruppe1]> describe table films
+    -> ;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'table films' at line 1
+MariaDB [fallstudie_gruppe1]> describe films;
++--------------+---------------+------+-----+---------+----------------+
+| Field        | Type          | Null | Key | Default | Extra          |
++--------------+---------------+------+-----+---------+----------------+
+| id           | int(11)       | NO   | PRI | NULL    | auto_increment |
+| title        | varchar(512)  | NO   |     | NULL    |                |
+| release_year | year(4)       | NO   |     | NULL    |                |
+| plot         | varchar(1024) | NO   |     | NULL    |                |
+| runtime      | varchar(12)   | NO   |     | NULL    |                |
+| directors_id | int(11)       | NO   | MUL | NULL    |                |
+| poster       | varchar(150)  | NO   |     | NULL    |                |
+| countries_id | int(11)       | NO   | MUL | NULL    |                |
+| imdbID       | varchar(17)   | NO   | UNI | NULL    |                |
++--------------+---------------+------+-----+---------+----------------+
+9 rows in set (0.007 sec)
+
+MariaDB [fallstudie_gruppe1]> describe comments
+    -> ;
++----------+----------+------+-----+---------------------+----------------+
+| Field    | Type     | Null | Key | Default             | Extra          |
++----------+----------+------+-----+---------------------+----------------+
+| id       | int(11)  | NO   | PRI | NULL                | auto_increment |
+| comment  | text     | NO   |     | NULL                |                |
+| users_id | int(11)  | NO   | MUL | NULL                |                |
+| created  | datetime | NO   |     | current_timestamp() |                |
++----------+----------+------+-----+---------------------+----------------+
+4 rows in set (0.007 sec)
+
+MariaDB [fallstudie_gruppe1]> 

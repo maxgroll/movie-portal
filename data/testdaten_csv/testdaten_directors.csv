@@ -1,0 +1,14 @@
+Testdaten für Tabelle directors
+------------------------------------------
+id(auto);director(varchar)
+
+,"Quentin Tarantino"
+,"Luca Guadagnino"
+,"Wachowski"
+,"Denis Villeneuve"
+,"Lee Chang-dong"
+,"Alejandro Jodorowsky"
+,"Zack Snyder"
+,"David Fincher"
+,"Fatih Akin"
+,"Ivan Reitman"

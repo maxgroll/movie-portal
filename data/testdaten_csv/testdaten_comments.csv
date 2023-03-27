@@ -1,0 +1,5 @@
+Testdaten für Tabelle comments
+------------------------------------------
+id(auto);comment(text),users_id(int)
+
+,"Ich verstehe den Hype um den Film nicht. Nicht ganz so mein Ding.",1

@@ -1,0 +1,22 @@
+Testdaten für Tabelle languages
+------------------------------------------
+id(auto);language(varchar)
+
+,"german"
+,"english"
+,"spanish"
+,"french"
+,"arabic"
+,"chinese"
+,"japanese"
+,"russian"
+,"portugese"
+,"korean"
+,"turkish"
+,"tamil"
+,"italian"
+,"dutch"
+,"swedish"
+,"hebrew"
+,"ukrainian"
+,"mandarin"

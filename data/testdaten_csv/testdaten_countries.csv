@@ -1,0 +1,9 @@
+Testdaten für Tabelle countries
+------------------------------------------
+id(auto);country(varchar)
+
+,"United States"
+,"Italy"
+,"South Korea"
+,"Mexico"
+,"Germany"

@@ -1,0 +1,17 @@
+Testdaten für Tabelle genres
+------------------------------------------
+id(auto);genre(varchar)
+
+,"comedy"
+,"crime"
+,"drama"
+,"romance"
+,"sci-fi"
+,"mystery"
+,"thriller"
+,"horror"
+,"action"
+,"western"
+,"anime"
+,"eastern"
+,"comic"

@@ -1,0 +1,82 @@
+case index/deafault GEORG CHECK
+{
+1.div = wilkommen text
+2.div = rand select 10 films
+
+static method selectrand 5
+}
+
+
+//////////////////////////////////////////
+case register GEORG CHECK
+{
+
+div = register form
+redirect = zu index mit message = <a href=regis erfolgreich>
+
+}
+//////////////////////////////////////////
+case login GEORG CHECK
+{
+div = login form
+redirect = index mit message = hallo username
+}
+//////////////////////////////////////////
+case show films CHECK
+{
+div = table(show, edit, delete film am ende j zeile) mit pagenation
+}
+//////////////////////////////////////////
+case show films public CHECK
+{
+div = table(show) mit pagenation
+}
+//////////////////////////////////////////
+case show film CHECK
+{
+div = alle daten zu einem film
+if(eingeloggt)
+{
+div = link zu new comment
+}
+div = comments
+}
+//////////////////////////////////////////
+case new comment  CHECK
+{
+div = form text
+submit
+redirect = show film
+}
+//////////////////////////////////////////
+case new film (Checkbox?? -> languages, genres) CHECK
+{
+div = new film form
+redirect = index mit message = film erfolgreich eingetragen
+}
+//////////////////////////////////////////
+case logout CHECK
+{
+session_unset/destroy
+redirect = index  mit mesage = auf wiedersehen bis zum näcshten mal
+}
+//////////////////////////////////////////
+
+case show_search
+{
+div = peganation 10 suchergebnisse am ende jeder show film
+}
+
+case edit film
+{
+div = form edit
+redirect = index message = der film wurde efolgreich editiert
+}
+
+case delete film
+{
+p = möchtesrt du diesen ..... wirklich löschen?
+checkbox ja oder nein
+submit
+redirect = index message der film .... wurder efolgreich gelöscht
+}

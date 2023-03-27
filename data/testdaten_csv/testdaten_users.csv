@@ -1,0 +1,7 @@
+Testdaten für Tabelle users
+------------------------------------------
+id(auto);username(varchar),password(varchar),email(varchar)
+
+,"bluetrain","$2y$10$hq.pH3KKzsmKgkNE2I0c2.Dtghnk5or/9Ykt/TZ7/XpteEVytTIZu","bluetrain@gmail.com"
+,"blackspace","$2y$10$hq.pH3KKzsmKgkNE2I0c2.Dtghnk5or/9Ykt/TZ7/XpteEVytTIZu","daniel.black@gmail.com"
+,"erikamoon","$2y$10$hq.pH3KKzsmKgkNE2I0c2.Dtghnk5or/9Ykt/TZ7/XpteEVytTIZu","erikalaub@gmail.com"

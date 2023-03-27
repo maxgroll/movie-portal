@@ -1,0 +1,79 @@
+ Thema Filmportal Analyse
+//////////////////////////////////////////
+
+tabellen
+
+users = {id,username, password, email}
+
+admin = {id,username, password}
+
+movies = {id, runtime, titel, released, plot, poster, imdbrating, awards}
+
+directors = {id, director}
+
+genres = {id, genre}
+
+writers = {id, writer}
+
+actors = {id, actor}
+
+ACTIVE RECORD ??
+
+
+Preparation // Mise en place vor code
+//////////////////////////////////////////
+
+- Analyse
+- UML Diagramme
+- Testdaten
+- Datenbank erstellen
+- Konventionen
+- Ordnerstruktur
+
+Fragen zum Projekt
+//////////////////////////////////////////
+Cases auslagern?
+
+
+Admin aufgaben?
+edit_user
+edit_film
+delete_film
+delete_comment
+
+User nutzen? myview?
+show_films
+show_film
+search
+login
+logout
+new_comment
+new_film
+
+Besucher nutzen?
+show_films
+search
+register
+
+Was soll auf der startseite zu sehen sein?
+
+
+Umfang / Detail (z.B. welche infos zu filmen)?
+
+TO DO
+//////////////////////////////////////////
+
+
+- fk tabellen als aller letztes
+- mysqldump nach erstellung der datenbank und implementierung der testdaten
+- screenshots am ende von jeden tag
+
+
+TO DO WOCHENENDE
+//////////////////////////////////////////
+- erstellen views {show_film, show_films, search, show_search, register, login, about, logout, new_comment,     edit_user, new_film, edit_film, delete_film, delete_comment} georg
+- uml klasendiagramm max
+- uml db diagramm max 
+- datenbank erstellen max
+- testdaten sammeln 
+- erstellen models {Film, Language, Country, Actor, Director, Comment, Genre, User} georg

@@ -1,0 +1,3 @@
+Maxs-MacBook-Pro-2:data maxvongroll$ mysqldump -u root -p fallstudie_gruppe1 > /Users/maxvongroll/Sites/PHPProjects/fa21/phpd/fallstudie_gruppe1/admin/backup/fallstudie_gruppe1_dump.sql;
+Enter password: 
+Maxs-MacBook-Pro-2:data maxvongroll$ 

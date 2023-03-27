@@ -1,0 +1,42 @@
+fallstudie_gruppe1
+├── admin
+│   ├── backup
+│   │   ├── fallstudie_gruppe1_20.09.22
+│   │   ├── fallstudie_gruppe1_21.09.22
+│   │   ├── fallstudie_gruppe1_22.09.22
+│   │   ├── fallstudie_gruppe1_23.09.22
+│   │   └── fallstudie_gruppe1_css__24.09.22
+│   ├── css
+│   ├── img
+│   │   └── logos
+│   ├── include
+│   ├── js
+│   ├── models
+│   └── views
+├── backup
+├── css
+├── data
+│   └── testdaten_csv
+├── documentation
+│   ├── aenderungen_max
+│   ├── notizen
+│   ├── terminal
+│   └── umls
+├── img
+│   └── logos
+├── include
+├── js
+├── models
+├── test
+│   ├── georg
+│   │   └── include
+│   ├── max
+│   │   ├── date
+│   │   ├── discarded
+│   │   ├── fuer_css
+│   │   └── json
+│   ├── max_code
+│   └── testdaten
+│       ├── json
+│       └── xml
+└── views

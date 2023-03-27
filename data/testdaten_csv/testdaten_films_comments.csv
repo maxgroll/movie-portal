@@ -1,0 +1,5 @@
+Testdaten für Tabelle films_comments
+------------------------------------------
+films_id(auto);comments_id(varchar)
+
+1,1

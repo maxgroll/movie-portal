@@ -1,0 +1,126 @@
+MariaDB [fallstudie_gruppe1]> SELECT  films.id, title, release_year, directors.director, country, GROUP_CONCAT(DISTINCT genre ORDER BY title) AS genres, GROUP_CONCAT(DISTINCT actor ORDER BY title) AS actors,  GROUP_CONCAT(DISTINCT language ORDER BY title) AS languages FROM films
+    -> JOIN directors
+    -> ON directors.id=directors_id
+    -> JOIN films_genres
+    -> ON films.id = films_genres.films_id
+    -> JOIN genres
+    -> ON films_genres.genres_id = genres.id
+    -> JOIN films_actors 
+    -> ON films.id=films_actors.films_id
+    -> JOIN actors
+    -> ON films_actors.actors_id = actors.id
+    -> JOIN countries
+    -> ON countries.id=countries_id
+    -> JOIN films_languages
+    -> ON films.id=films_languages.films_id 
+    -> JOIN languages
+    -> ON films_languages.languages_id = languages.id
+    -> 
+    -> GROUP BY title\G
+*************************** 1. row ***************************
+          id: 4
+       title: Arrival
+release_year: 2016
+    director: Denis Villeneuve
+     country: United States
+      genres: sci-fi,mystery,drama
+      actors: Forest Whitaker,Jeremy Renner,Amy Adams
+   languages: russian,english,mandarin
+*************************** 2. row ***************************
+          id: 5
+       title: Burning
+release_year: 2018
+    director: Lee Chang-dong
+     country: South Korea
+      genres: thriller,mystery,drama
+      actors: Jeon Jong-seo,Steven Yeun,Yoo Ah-in
+   languages: korean,english
+*************************** 3. row ***************************
+          id: 2
+       title: Call Me by Your Name
+release_year: 2017
+    director: Luca Guadagnino
+     country: Italy
+      genres: romance,drama
+      actors: Hugh Grant,Halle Berry,Tom Hanks
+   languages: hebrew,italian,french,german
+*************************** 4. row ***************************
+          id: 3
+       title: Cloud Atlas
+release_year: 2012
+    director: Wachowski
+     country: United States
+      genres: mystery,sci-fi,drama
+      actors: Michael Stuhlbarg,Armie Hammer,Timothee Chalamet
+   languages: korean,spanish,ukrainian,english
+*************************** 5. row ***************************
+          id: 6
+       title: El Topo
+release_year: 1970
+    director: Alejandro Jodorowsky
+     country: Mexico
+      genres: western,drama
+      actors: José Legarreta,Brontis Jodorowsky,Alejandro Jodorowsky
+   languages: spanish
+*************************** 6. row ***************************
+          id: 8
+       title: Fight Club
+release_year: 1999
+    director: David Fincher
+     country: United States
+      genres: drama
+      actors: Meat Loaf,Edward Norton,Brad Pitt
+   languages: english
+*************************** 7. row ***************************
+          id: 1
+       title: Pulp Fiction
+release_year: 1994
+    director: Quentin Tarantino
+     country: United States
+      genres: drama,crime
+      actors: Samuel L. Jackson,Uma Thurman,John Travolta
+   languages: french,spanish,english
+*************************** 8. row ***************************
+          id: 9
+       title: Soul Kitchen
+release_year: 2009
+    director: Fatih Akin
+     country: Germnay
+      genres: comedy,drama
+      actors: Pheline Roggan,Moritz Bleibtreu,Adam Bousdoukos
+   languages: turkish,spanish,english,german
+*************************** 9. row ***************************
+          id: 10
+       title: Twins
+release_year: 1988
+    director: Ivan Reitman
+     country: United States
+      genres: crime,comedy
+      actors: Kelly Preston,Danny DeVito,Arnold Schwarzenegger
+   languages: german
+*************************** 10. row ***************************
+          id: 7
+       title: Watchmen
+release_year: 2009
+    director: Zack Snyder
+     country: United States
+      genres: action,mystery,drama
+      actors: Carla Gugino,Patrick Wilson,Jackie Earle Haley
+   languages: english
+10 rows in set (0.005 sec)
+
+MariaDB [fallstudie_gruppe1]> SELECT  comments.id, GROUP_CONCAT(DISTINCT comment ORDER BY comments.id) AS comments, users_id, users.username as user, films.id as film_id, films.title as film, created FROM comments
+    -> JOIN users
+    -> ON users.id=users_id
+    -> JOIN films_comments
+    -> ON films_id=films_comments.films_id 
+    -> JOIN films
+    -> ON films_comments.films_id=films.id;
++----+-------------------------------------------------------------------+----------+-----------+---------+--------------+---------------------+
+| id | comments                                                          | users_id | user      | film_id | film         | created             |
++----+-------------------------------------------------------------------+----------+-----------+---------+--------------+---------------------+
+|  1 | Ich verstehe den Hype um den Film nicht. Nicht ganz so mein Ding. |        1 | bluetrain |       1 | Pulp Fiction | 2022-09-26 10:45:22 |
++----+-------------------------------------------------------------------+----------+-----------+---------+--------------+---------------------+
+1 row in set (0.005 sec)
+
+MariaDB [fallstudie_gruppe1]> 

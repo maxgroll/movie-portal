@@ -1,0 +1,64 @@
+Besucher
+
+was sollte dieser als erstes sehen?
+welche Anfragen (actions) kann er machen?
+Actions:
+-suche
+-filme ansehen
+-registrieren
+-einloggen
+
+______________________________
+User
+
+-Filme eintragen
+-kommentieren (aller Einträge)
+-bewerten  (aller Einträge)
+-eigene Einträge editieren? löschen?
+
+
+_______________
+Admin
+
+was für Aufgaben hat der Admin?
+
+
+
+__________________________
+Models Views Controller
+
+So habe ich den Verlauf verstanden.
+
+-Anfrage von der webseite (user)
+-Controller verarbeitet Anfrage (und Daten) und schickt diese an Model der diese verarbeitet und vorbereitet für Ausgabe oder eintrag in db
+-Model schickt verarbeitete Daten entweder an db bei insert zb, oder an View 
+-View gibt die angefragenen Daten aus (Ansicht oder Formular zb)
+-Neue Anfrage..........
+
+Der Controller nimmt also die Eingaben des Benutzers entgegen, bearbeitet das Model und sorgt für die Aktualisierung der Anzeige. Die Benutzerschnittstelle ist folglich eine Kombination aus View und Controller und dient zur Interaktion mit den Benutzern
+ 
+Das Model ist ein Objekt das Alle Methoden, die nicht für die Benutzerschnittstelle verwendet werden, enthält, 
+
+Die View stellt die visuelle Anzeige des Models in der Benutzerschnittstelle dar. Diese ist ausschließlich mit der Anzeige von Informationen befasst. Alle Änderungen der Informationen werden also vom Controller und Model verarbeitet.
+
+So sind Model und View getrennt. Model = Logik, View = Ausbage. 
+
+-Welche logik ist in Model, bzw Klasse, welche wird ausgelagert in ein include?
+-Was genau muss jetzt an Logik im controller, bzw. Cases stehen? am besten an einem beispiel "neuer Eintrag" und "show Film" zb.
+-tpl nur für templates, sollten die cases ausgelagert werden in include, haben die dann auch eine besondere endung? .tpl.php, oder .inc.php?
+
+
+
+"Bei Active-Record entspricht ein Objekt einem Datensatz, einer Datenbank- tabelle oder Datenbankview. Dabei wird die Geschäftslogik mit dem Zugriff auf den zugrundeliegenden Datensatz gekoppelt. Durch das Active-Record- Pattern wird der gesamte Datenbankzugriff für ein Objekt in die Klasse selbst integriert. Methoden für Create, Read, Update und Delete (CRUD-Implementierung) werden innerhalb der Klasse zur Verfügung gestellt, um das Objekt mit dem zugehörigen Datensatz abzugleichen."  https://www.grin.com/document/139022
+
+
+
+
+
+
+
+
+
+
+
+

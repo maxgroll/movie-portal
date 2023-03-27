@@ -1,0 +1,17 @@
+struktur vervollständigen:
+ 
+liste von views
+views erstellen
+controller mit cases (namen von cases)
+css vom letzten mal? Neu?
+
+
+erstfassung uml/klassen
+
+daten sammeln
+daten vorbereiten
+
+
+fragen für interview
+
+liste von methoden
