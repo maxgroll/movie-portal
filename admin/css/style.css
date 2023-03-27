@@ -1,0 +1,339 @@
+/* layout.tpl.php */
+html, body
+{
+	width:99.5%;
+	height:auto;
+	font-family: Poppins, sans-serif;  
+	background-color: #f7f7f7;
+	box-sizing: border-box;
+	overflow: hidden;
+	padding-bottom: 30px; /*wird gesetzt da es einen overflow:auto gibt weiter unten und er mit dem overflow hidden die scrollbar versteckt*/
+}
+/* general styles fuer Ueberschriften */
+h1
+{  
+	font-family: Lora, sans-serif;
+	color: #0026ff;
+	font-size: 30px;
+	text-align: center;
+}
+
+h2 
+{  
+	font-family: Lora, sans-serif;
+	color: #0026ff;
+	text-align: center;
+}
+
+h3 
+{  
+	font-family: Lora, sans-serif;
+	color: #0026ff;
+}
+/*Styles header*/
+header
+{
+	background-image: linear-gradient(to bottom right, #0026ff , #9200cc);
+	position: relative;
+	width: 100%;
+	height: auto;
+	top: 3px;
+	margin-top: 2px;
+	margin-bottom: 2px;
+}
+#logo
+{
+	display: block;
+	margin-left: auto;
+	margin-right: 10px; 
+}
+#logo_foot
+{
+	position: relative;
+	float:left;
+	margin-left: 10px; 
+}
+#entry_title  
+{
+	font-family: Lora, sans-serif;
+    text-align: center;
+    color: #0026ff;
+    font-size: 1.6vw;
+    letter-spacing: 0.04em;
+}
+
+/*Styles fuer navigationselemente*/
+nav, #foot_nav
+{
+	position: relative;
+	width: 100%;
+	height: 10%;
+	top: 10%;
+	border-bottom: 2px solid #9200cc;
+	margin-top: 15px;
+	margin-bottom: 10px;
+	padding-bottom:15px;
+	text-align: right;
+}
+
+#foot_nav
+{
+	margin-top: 20px;
+	border-bottom: none;
+	padding-bottom:none;
+	margin-top: none;
+	margin-bottom: none;
+}
+
+nav a, #foot_nav a 
+{ 
+	font-weight: bold;
+	padding-right: 20px;
+	font-size: 23px;
+	color: #9200cc;
+	text-decoration: none;
+	letter-spacing: 0.05em;
+}
+#foot_nav a
+{
+	color: #e0e0ff;
+}
+#foot_nav a:hover
+{
+	color: #9494b8;
+}
+nav #home  
+{	
+	font-weight: bold;
+	float: left;	
+	letter-spacing: 0.2em;
+	padding-left: 15px;
+	font-size:28px;
+	margin-top:-2px;		
+}
+nav a:hover
+{
+	color: #9494b8;
+}
+#home a:hover,  
+{
+	color: #0026ff;
+}
+/*Styles fuer main*/
+main
+{
+	position: relative;
+	width: 100%;
+	max-height:57vh;
+	top: 20%;
+	margin-top: 2px;
+	margin-bottom:4px;
+    overflow: auto;
+    padding-right: 30px; /* Increase/decrease this value for cross-browser compatibility */
+	padding-bottom: 60px;
+    box-sizing: content-box; 
+}
+
+#spacer 
+{
+	visibility:hidden;
+	height:20vh;
+}
+
+/*styles fuer pagination => div hinzugefügt in show_films_public.tpl und show_films.tpl + den zusatz . "seite" .*/
+.pagination
+{
+	position:relative;
+	font-size:20px;
+	font-weight:bold;
+	margin-top:10px;
+	text-align: center;
+	
+
+}
+.pagination a
+{
+	text-decoration: none;
+	color:#9200cc;
+	padding-left: 20px;
+}
+.pagination a:hover
+{
+	color:#9494b8;
+}
+
+
+/*styles fuer show_film*/
+#poster_pic
+{
+	padding-top:10px;
+	margin-left:13px;
+	width:auto;
+	height:auto;
+	padding-bottom:10px;
+}
+
+#show_film  
+{
+	position: relative;
+	float: left;
+	clear:left;
+	border-bottom: 2px solid  #9200cc;
+	width: 100%;
+	height: auto;
+	margin: 10px 0px 10px 0px;
+	padding:0px 0px 10px 0px;
+	column-count: 3;
+	column-width: 24em;	
+}
+/*styles fuer filmbeschreibung im show_film => befinden sich im show_film.tpl*/
+.films_key
+{
+	color:#0026ff; 
+	margin-bottom:5px;
+	float:left; 
+	clear:left; 
+}
+.films_value
+{
+	margin-left:15px; 
+	margin-bottom:5px;
+	float:left; 
+}
+/*styles fuer commentare und commentar form im show_film => befinden sich im show_film.tpl*/
+/*es wird im show_film.tpl eine if abfrage gemacht ob der user gesetzt ist und entweder die comment_form angezeigt oder nicht*/
+#comment_form 
+{
+	display:block; 
+	width:auto;
+	padding: 13px;
+}
+/*wen auf der public seite, comment nicht anzeigen*/
+#make_comment_public
+{
+	display:none;	
+}
+/*styles fuer ausgabe der comments*/
+#comment_title
+{
+	text-align:left;
+}
+#show_comment  
+{
+	position: relative;
+	float: left;
+	clear:left;
+	border-bottom: 2px solid  #9200cc;
+	width: 100%;
+	height: auto;
+	margin: 10px 0px 10px 13px;
+	padding-bottom:20px;
+	
+}
+/*button fuer delete_comment*/
+#delete_comment
+{
+	text-decoration:none;
+}
+/*ausgabe von delete comment und delete film*/
+.delete
+{
+	text-align:center;
+}
+
+
+/*styles fuer tabellen ausgabe*/
+.datatable
+{
+	position: relative;
+	margin: auto;	
+}
+
+.datatable a
+{
+	text-decoration: none;
+	color:#0026ff;
+	font-weight:bold;	
+}
+.datatable a:hover
+{
+	
+	color:#9494b8;
+	
+}
+/*styles fuer Tabellen*/
+td.datatable  
+{
+	padding: 0.5em;
+	margin: auto;
+	border: solid 0.5px black;
+}
+
+th.datatable  
+{
+	padding: 0.5em;
+	margin: auto;
+	border: solid 0.5px black;
+	background-color:#bebeff;
+}
+
+table.datatable
+{
+	padding: 0.5em;
+	margin: auto;
+}
+
+/*styles fuer formulare*/
+
+form
+{
+	position :relative;
+  	width: 30%;
+  	padding: 10px;
+	margin:auto;
+	padding-left:17vw;
+}
+
+
+/* messages */
+p.message
+{
+	font-weight:bold;
+	font-size:1.2em;
+	font-family: Lora, sans-serif;
+	color: #9200cc;
+	text-align: center;
+}
+/*styles fuer input elemente*/
+input
+{
+	display: block;
+}
+
+/* new film form */
+input[type=checkbox]
+{
+	display: inline-block;
+	margin:10px 30px 10px 10px;
+}
+
+/* errors */
+p.error
+{
+	font-size:1.2em;
+	font-family: Lora, sans-serif;
+	color:red;
+}
+/*styles fuer footer*/
+footer
+{
+	background-image: linear-gradient(to bottom right, #9200cc , #0026ff);
+	position: absolute;
+	width: 99%;
+	height: auto;
+	bottom: 1vh;
+	/*border: 1px solid;*/
+	margin-top: 2px;
+	float:left;
+	clear:left;
+}
