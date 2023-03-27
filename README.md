@@ -17,7 +17,7 @@ From cmd (or terminal inMac) change directory to "movie-portal/data"
 a) in macintosh die Datei './create_database.bat' 
 b) Windows 'create_database.bat'
 
-!!notice: you will be asked for a password fout times. If you have a password, enter it four times, if not , just press enter four times.
+!!notice: you will be asked for a password four times. If you have a password, enter it four times, if not, just press enter four times.
 
 4.- Open webpage:
 Go to localhost and click on the folder movie-portal
