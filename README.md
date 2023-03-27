@@ -16,11 +16,14 @@
 From cmd (or terminal inMac) change directory to "movie_portal-main/data" 
 a) in macintosh die Datei './create_database.bat' 
 b) Windows 'create_database.bat'
+c) this will create an sql database called "fallstudie_gruppe1"
+
 
 !!notice: you will be asked for a password four times. If you have a password, enter it four times, if not, just press enter four times.
 
 4.- Open webpage:
 Go to localhost and click on the folder movie-portal-main
+!!notice: you might have to change the use and passsword parameters in ""movie_portal-main/include/database.php" to match your user and password for mysql
 
 5.- You can now register or log in :  for testing purposes you can use the User: "bluetrain", "blackspace", or "erikamoon", wth the Password: "Berlin1!"
 
