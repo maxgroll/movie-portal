@@ -8,13 +8,15 @@
 
 1.-  download and install XAMPP (https://www.apachefriends.org/de/index.html) or similar unless you already have a personal webserver
 
+-you will also need a working install of mysql
+
 2.- download the project and unzip it in xamp/htdocs
 
 3.- create database
 
  
-From cmd (or terminal inMac) change directory to "movie_portal-main/data" 
-a) in macintosh die Datei './create_database.bat' 
+From cmd (or terminal in Mac) change directory to "movie_portal-main/data" 
+a) in macintosh './create_database.bat' 
 b) Windows 'create_database.bat'
 c) this will create an sql database called "fallstudie_gruppe1"
 
@@ -23,7 +25,7 @@ c) this will create an sql database called "fallstudie_gruppe1"
 
 4.- Open webpage:
 Go to localhost and click on the folder movie-portal-main
-!!notice: you might have to change the use and passsword parameters in ""movie_portal-main/include/database.php" to match your user and password for mysql
+!!notice: you might have to change the use and password parameters in ""movie_portal-main/include/database.php" to match your user and password for mysql
 
 5.- You can now register or log in :  for testing purposes you can use the User: "bluetrain", "blackspace", or "erikamoon", wth the Password: "Berlin1!"
 
