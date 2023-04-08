@@ -1,6 +1,9 @@
 # movie_portal
 
-#### School project written with a friend in Php for a movie portal.
+![cinema-4153289_640](https://user-images.githubusercontent.com/85740167/230725855-1da7d3c5-a79b-455a-b6aa-d198052213b5.jpg)
+
+### School project written with a friend in Php for a movie portal.
+
 
 
 #### How to test:
