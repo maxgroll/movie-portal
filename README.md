@@ -24,12 +24,10 @@
       - Windows 'create_database.bat' <br>
       - this will create an sql database called "fallstudie_gruppe1"
 > **Note**
-> you might have to change the use and password parameters in ""movie_portal-main/include/database.php" to match your user and password for mysql :exclamation:
+> you might have to change the USER and PASSWORD parameters in ""movie_portal-main/include/database.php" to match your user and password for mysql :exclamation:
 
 4. Open webpage: 
   - Go to localhost and click on the folder movie-portal-main
-
-
 
 5. You can now register or log in:  
     - for testing purposes you can use the User: 
@@ -38,7 +36,9 @@
       - "Berlin1!"
 
 6. To access the admin area go to: "localhost/movie_portal-main/admin". 
-    - For testing purposes User: "admin", Password: "admin".
+    - For testing purposes 
+      - User: "admin" 
+      - Password: "admin"
 
 
 7. extra testdata for the Admin to upload are in "movie-portal-main/test/testdaten/json". These can be uploaded from within the admin area for test purposes.
