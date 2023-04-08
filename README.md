@@ -1,10 +1,7 @@
 # movie_portal
 
-
 ![cinema-4153289_640](https://user-images.githubusercontent.com/85740167/230725855-1da7d3c5-a79b-455a-b6aa-d198052213b5.jpg)
-<div align="center">
-<br><samp>Image by <a href="https://pixabay.com/users/mohamed_hassan-5229782/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4153289">mohamed_hassan-5229782/</a> from <a href="https://pixabay.com//?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4153289">Pixabay</a></samp> 
- </div>
+<br><samp>Image by <a href="https://pixabay.com/users/mohamed_hassan-5229782/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4153289">mohamed_hassan-5229782/</a> from <a href="https://pixabay.com//?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4153289">Pixabay</a></samp>
 
 ### School project written with a friend in Php for a movie portal.
 
